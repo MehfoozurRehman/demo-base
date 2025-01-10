@@ -1,0 +1,29 @@
+{
+  "name": "zood-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.0",
+    "jotai": "^2.11.0",
+    "next": "15.1.4",
+    "nuqs": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "swr": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "prisma": "^6.2.0",
+    "typescript": "^5"
+  }
+}
