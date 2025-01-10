@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@prisma/client':
-        specifier: ^6.2.0
+        specifier: ^6.2.1
         version: 6.2.1(prisma@6.2.1)
       jotai:
         specifier: ^2.11.0
@@ -34,13 +34,13 @@ importers:
         specifier: ^22
         version: 22.10.5
       '@types/react':
-        specifier: ^19.0.3
+        specifier: ^19.0.4
         version: 19.0.4
       '@types/react-dom':
         specifier: ^19.0.2
         version: 19.0.2(@types/react@19.0.4)
       prisma:
-        specifier: ^6.2.0
+        specifier: ^6.2.1
         version: 6.2.1
       typescript:
         specifier: ^5
