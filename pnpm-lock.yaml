@@ -27,8 +27,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.3(react@19.2.3)
       swr:
-        specifier: ^2.3.7
-        version: 2.3.7(react@19.2.3)
+        specifier: ^2.3.8
+        version: 2.3.8(react@19.2.3)
     devDependencies:
       '@types/node':
         specifier: ^22
@@ -511,8 +511,8 @@ packages:
       babel-plugin-macros:
         optional: true
 
-  swr@2.3.7:
-    resolution: {integrity: sha512-ZEquQ82QvalqTxhBVv/DlAg2mbmUjF4UgpPg9wwk4ufb9rQnZXh1iKyyKBqV6bQGu1Ie7L1QwSYO07qFIa1p+g==}
+  swr@2.3.8:
+    resolution: {integrity: sha512-gaCPRVoMq8WGDcWj9p4YWzCMPHzE0WNl6W8ADIx9c3JBEIdMkJGMzW+uzXvxHMltwcYACr9jP+32H8/hgwMR7w==}
     peerDependencies:
       react: ^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -531,8 +531,8 @@ packages:
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
-  use-sync-external-store@1.4.0:
-    resolution: {integrity: sha512-9WXSPC5fMv61vaupRkCKCxsPxBocVnwakBEkMIHHpkTTg6icbJtg6jzgtLDm4bl3cSHAca52rYWih0k4K3PfHw==}
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -925,11 +925,11 @@ snapshots:
       client-only: 0.0.1
       react: 19.2.3
 
-  swr@2.3.7(react@19.2.3):
+  swr@2.3.8(react@19.2.3):
     dependencies:
       dequal: 2.0.3
       react: 19.2.3
-      use-sync-external-store: 1.4.0(react@19.2.3)
+      use-sync-external-store: 1.6.0(react@19.2.3)
 
   tinyexec@1.0.2: {}
 
@@ -939,6 +939,6 @@ snapshots:
 
   undici-types@6.20.0: {}
 
-  use-sync-external-store@1.4.0(react@19.2.3):
+  use-sync-external-store@1.6.0(react@19.2.3):
     dependencies:
       react: 19.2.3
