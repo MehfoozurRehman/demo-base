@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# zood-web
 
-## Getting Started
+A Next.js App Router scaffold with Prisma (MongoDB provider), Jotai, SWR and small server-action and data hooks. The app itself is a placeholder.
 
-First, run the development server:
+**Status:** Starter. The project wires up the framework, database client and client-side helpers, but the home page only renders "Home", the one server action returns a fixed result, and the Prisma schema defines no models.
+
+## The problem
+
+The code shows a foundation for a web app with a database behind it, not a specific product. It is a starting point for a full-stack Next.js project.
+
+## What it does
+
+- Renders a placeholder home page (`app/page.tsx`).
+- Provides an example server action, `example`, in `actions.ts`, which returns a fixed "ok" status.
+- Provides client hooks `useGetAction` and `usePostAction` in `hooks/` for calling server actions.
+- Sets up a Jotai provider in `providers/Jotai.tsx` and a Prisma client in `lib/prisma.ts`.
+
+## How it's built
+
+- Next.js with the App Router and Turbopack for development.
+- Prisma with a `mongodb` datasource in `prisma/schema.prisma`, and a generated client.
+- Jotai for shared client state, SWR for data fetching, and `nuqs` for URL query state.
+- Server actions in `actions.ts` are the intended entry point for data mutations.
+
+## Running it locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install       # or npm install
+pnpm db:generate   # prisma generate
+pnpm dev           # next dev --turbopack
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Prisma needs a database connection configured in the environment before it can connect. The repo does not include a sample environment file.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's left
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The Prisma schema has no models, so nothing is stored yet.
+- The home page is a placeholder.
+- The `example` server action does not touch the database or validate input.
+- There are no tests.
+- The original create-next-app README was replaced with this file.
