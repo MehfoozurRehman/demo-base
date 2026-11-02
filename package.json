@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node api.js && next dev --turbopack",
-    "build": "node api.js && prisma generate && next build",
-    "start": "node api.js && next start",
+    "dev": "node init && next dev --turbopack",
+    "build": "node init && prisma generate && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio"
   },
   "dependencies": {
     "@prisma/client": "^6.19.1",
+    "dotenv": "^8.2.0",
     "jotai": "^2.16.1",
     "next": "15.5.9",
+    "node-fetch": "^3.3.2",
     "nuqs": "^2.8.6",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
