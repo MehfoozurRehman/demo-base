@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && next dev --turbopack",
-    "build": "node init && prisma generate && next build",
-    "start": "node init && next start",
+    "dev": "next dev --turbopack",
+    "build": "prisma generate && next build",
+    "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:studio": "prisma studio"

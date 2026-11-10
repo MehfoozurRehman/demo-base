@@ -39,4 +39,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .gitignore
-config.bat
+
+.env*
+!.env.example
